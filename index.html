@@ -1,109 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #ffffff;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 45px;
-  text-align: center;
-  background: #004225;
-}
-
-.header h1 {
-  font-size: 60px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #000000;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 16px 20px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #004225;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 25%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 75%;
-  background-color: #ffffff;
-  padding-left: 20px;
-}
-
-/* images */
-.image {
-  background-color: #aaa;
-  width: 10%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 5px;
-  text-align: center;
-  background: #004225;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -112,10 +10,9 @@ body {
 </div>
 
 <div class="topnav">
-  <a href="#">Socials</a>
   <a href="#">Photo gallery</a>
-  <a href="#">Recipes</a>
-  <a href="#">Home</a>
+  <a href="recipe main page.html">Recipes</a>
+  <a href="index.html">Home</a>
 </div>
 
 <div class="row">
@@ -123,9 +20,7 @@ body {
     <div class="card">
       <h2>Roll of the Week</h2>
       <h4>Salmon & avocado roll</h4>
-      <div class="image" style="height:20px;">
-	  <img src="SUSHI_salmon+avocado roll.jpg" alt="salmon + avocado roll" width="200" height="180">
-	    </div>
+	  <img class="image" src="SUSHI_salmon+avocado roll.jpg" alt="salmon + avocado roll">
       <p>About the dish: This is a very simple and basic sushi dish guarateed
 	  to quentch your sushi cravings. The simple combination of avacado and
 	  salmon produces an amazing flavour profile that is excentuated by properly
@@ -160,7 +55,7 @@ body {
   <div class="rightcolumn">
     <div class="card">
       <h2>Seceret Sushi</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
+      <img class="image" src="main_sushi_image.jpg" alt="sushi">
       <p>Welcome to our sushi website, where we celebrate the rich history
 	  and artistry of this beloved Japanese cuisine. Sushi has become a global
 	  phenomenon, and we are passionate about sharing its flavors, techniques,
@@ -172,22 +67,20 @@ body {
 	  dive into the world of sushi and discover the unique tastes, textures,
 	  and traditions that make it so special.</p>
     </div>
-    	<div class="card">
-      	<h2>History of sushi<h2>
-      	</div>
-        <div class="rightcolumn">
-      		<p>Sushi is a traditional Japanese dish that has a rich history
-			dating back over 1,000 years. The origins of sushi can be traced
-			back to Southeast Asia, where people would preserve fish by wrapping 
-			it in fermented rice. Over time, sushi evolved into the dish we
-			know today, with the development of new techniques and the addition
-			of ingredients such as vinegar, seaweed, and wasabi. During the Edo
-			period in Japan (1603-1868), sushi became widely popular, and the
-			sushi chefs began to specialize in the art of making sushi. Today
-			, sushi is enjoyed around the world and has become a staple in
-			Japanese cuisine.</p>
-        </div>
-        </div>
+    <div class="card">
+      	<h2>History of sushi</h2>
+      	<p>Sushi is a traditional Japanese dish that has a rich history
+		dating back over 1,000 years. The origins of sushi can be traced
+		back to Southeast Asia, where people would preserve fish by wrapping 
+		it in fermented rice. Over time, sushi evolved into the dish we
+		know today, with the development of new techniques and the addition
+		of ingredients such as vinegar, seaweed, and wasabi. During the Edo
+		period in Japan (1603-1868), sushi became widely popular, and the
+		sushi chefs began to specialize in the art of making sushi. Today
+		, sushi is enjoyed around the world and has become a staple in
+		Japanese cuisine.</p>
+	</div>
+  </div>
     <div class="rightcolumn">
     <div class="card">
       <h3>About me</h3>
